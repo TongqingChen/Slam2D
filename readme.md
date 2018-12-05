@@ -49,6 +49,7 @@ You can almost get started referring to main.cpp in the "demo" folder. Bellow ar
 >2. add observations
 >3. compile
 >4. solve
+
 Optional steps:
 >5. print report
 >6. save model
