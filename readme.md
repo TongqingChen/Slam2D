@@ -4,7 +4,7 @@
 
 Slam2D is a project for optimizing a bundle adjustment problem in 2D-SLAM. It includes some source files and a test file named main.cpp in the folder demo.
 In the visual odemetry, a camera is restricted to moving in a 2D plane which is parallel to the landmark plane. Therefore, below parameters need to be optimized:
-> 1. M landmarks(keypoints): X, Y (total number 2*M)
+> 1. M landmarks(key points): X, Y (total number 2*M)
 > 2. N camera pose(frames): x, y (total number 2*N)
 > 3. camera intrinsic parameters: focal length, distortion
 > 4. camera extrinsic parameters: rotation angle, Z(distance to landmark plane)
