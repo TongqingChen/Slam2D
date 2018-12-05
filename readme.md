@@ -4,18 +4,18 @@
 
 Slam2D is a project for optimizing a bundle adjustment problem in 2D-SLAM. It includes some source files and a test file named main.cpp in the folder demo.
 In the visual odemetry, a camera is restricted to moving in a 2D plane which is parallel to the landmark plane. Therefore, below parameters need to be optimized:
-> M landmarks(keypoints): X, Y (total number 2*M)
-> N camera pose(frames): x, y (total number 2*N)
-> camera intrinsic parameters: focal length, distortion
-> camera extrinsic parameters: rotation angle, Z(distance to landmark plane)
+> 1. M landmarks(keypoints): X, Y (total number 2*M)
+> 2. N camera pose(frames): x, y (total number 2*N)
+> 3. camera intrinsic parameters: focal length, distortion
+> 4. camera extrinsic parameters: rotation angle, Z(distance to landmark plane)
 
 ## Requirement
 
-> language: c++
-> platform: ubuntu 18.04
-> IDE: clion
-> compile: cmake, gcc
-> 3rd-party libraries: ceres(eigen3 needed)
+> 1. language: c++
+> 2. platform: ubuntu 18.04
+> 3. IDE: clion
+> 4. compile: cmake, gcc
+> 5. 3rd-party libraries: ceres(eigen3 needed)
 
 ## Structure
 
@@ -23,12 +23,12 @@ In the visual odemetry, a camera is restricted to moving in a 2D plane which is 
 1. bundle_adjustment.cpp
 It includes almost all key codes to accomplish bundle adjustment using ceres.
 A class named BundleAdjustment is defined in the file. During the class, below key functions are claimed:
-> Add observation
-> Compile(build the computational graph)
-> Solve(training procedure)
-> Report
-> Save model
-> Save PLY/PCL file to display meshlab/pcl
+> 1. Add observation
+> 2. Compile(build the computational graph)
+> 3. Solve(training procedure)
+> 4. Report
+> 5. Save model
+> 6. Save PLY/PCL file to display meshlab/pcl
 > etc.
 
 2. model.cpp
